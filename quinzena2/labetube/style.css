@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*cores*/
+
+header {
+    background-color: seagreen;
+}
+
+img {
+    background-color: greenyellow;
+}
+
+section>p {
+    background-color: red;
+}
+
+footer {
+    background-color: sienna;
+}
+
+/* grid da pagina */
+
+body {
+    display: grid;
+    grid-template-rows: 60px, 1fr, 60px;
+}
+
+/* header home */
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    
+}
+
+header>img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+.teste {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* main home - grid de video */
+
+#main-home {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 15px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 2px solid greenyellow;
+}
+
+section>a>img {
+    width: 100%;
+}
+
+/* main detalhes video */
+
+#main-detalhes {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 50px; 
+}
+
+main>video {
+    height: 100vh;
+}
+
+/* footer */
+
+footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}

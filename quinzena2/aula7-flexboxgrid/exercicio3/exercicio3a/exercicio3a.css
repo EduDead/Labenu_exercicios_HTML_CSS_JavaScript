@@ -1,0 +1,102 @@
+/*Original*/
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: white;
+}
+
+.green-background {
+    background-color: green;
+}
+
+.yellow-background {
+    background-color: yellow;
+}
+
+.pink-background {
+    background-color: fuchsia;
+}
+
+.blue-background {
+    background-color: blue;
+}
+
+.red-background {
+    background-color: red;
+}
+
+.lightgreen-background {
+    background-color: lightgreen;
+}
+
+.purple-background {
+    background-color: purple;
+}
+
+/*Alterações*/
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: center;
+}
+
+#top-container {
+    display: flex;
+    width: 100%;
+}
+
+.green-background{
+    width: 20%;
+    height: 75px;
+}
+
+.yellow-background {
+    width: 80%;
+    height: 75px;
+}
+
+.pink-background {
+    width: 100%;
+    height: 550px;
+}
+
+#middle-container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    width: 100%;
+    justify-content: space-between;
+}
+
+#content2 {
+    width: 50%;
+}
+
+.blue-background {
+    height: 300px;
+}
+
+#vertical-middle-container {
+    width: 25%;
+}
+
+.red-background, .lightgreen-background {
+    height: 150px;
+}
+
+
+
+div:nth-child(4){
+    display: flex;
+    width: 100%;
+}
+
+.purple-background {
+    width: 100%;
+    height: 75px;
+}

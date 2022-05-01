@@ -1,0 +1,103 @@
+.algo {
+    color: #1F34B5;
+    color: #257CA8;
+    color: #185370;
+    color: #1FB596;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url("/font/Barlow-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Oxanium';
+    src: url("/font/Oxanium-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: #B0C4DE;
+}
+
+/*cabeçalho*/
+.cabecalho-1 {
+    text-align: left;
+    display: flex;
+    width: 37%;
+    height: 10vh;
+    align-items: center;
+    /*border: 3px solid #73AD21;*/
+}
+
+.cabecalho-logo {
+    margin: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+    display: inline-block;
+}
+
+.cabecalho {
+    /*border: 3px solid #73AD21;*/
+    padding: 10px;
+    display: inline-block;
+    margin-right: ;
+}
+
+.meu-nome {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 35px;
+    display: inline-block;
+    color: #1F34B5;
+}
+
+.dev {
+    display: inline-block;
+    color: #257CA8;
+    font-family: 'Barlow';
+}
+
+/*body*/
+.inner-box {
+    width: 60%;
+    margin-left: 150px;
+}
+
+.inner-box p{
+    font-family: 'Barlow';
+    font-weight: 100;
+}
+
+.titulo {
+    padding-left: 15px;
+    color: #1FB596;
+    font-family: 'Oxanium';
+    background: rgb(24,83,112);
+    background: linear-gradient(90deg, rgba(24,83,112,1) 0%, rgba(24,83,112,1) 50%, rgba(9,9,121,0) 100%);
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline-block p{
+    margin-right: 30px;
+}
+
+.foto {
+    width: 40%;
+    right: 0px;
+    text-align: right;
+    float: right;
+    margin-right: 130px;
+    margin-top: 20px;
+}
+
+.habhead {
+    font-size: 30px;
+    font-weight: bold;
+    color: ;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Adicionar Produto</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <img class="logo" src="\img\poke-mart-logo.png" alt="Bem-vindo à PokeMart!"/>
+        
+        <div class="menu">
+            <a href="\index.html">INÍCIO</a>
+            <p class="separador-menu">|</p>
+            <a href="\ctrl-estoque.html">ESTOQUE</a>
+            <p class="separador-menu">|</p>
+            <a href="\add-produto.html">ADICIONAR PRODUTOS</a>
+            <p class="separador-menu">|</p>
+            <a href="\funcionarios.html">FUNCIONÁRIOS</a>
+        </div>
+    </div>
+
+
+    
+    <h2>Adicionar Produto</h2>
+    <form action="">
+        <table id="table-add-item">
+        <tr>
+            <td><label for="link-foto">Link para foto: </label></td>
+            <td><input type="url" id="link-foto" name="link-foto"></td>
+        </tr>
+        
+        <tr>
+            <td><label for="descricao">Descrição do produto: </label></td>
+            <!-- Adicione o id apropriado para o input abaixo -->
+            <td><input type="text" id="descrição" name="descrição"></td>
+        </tr>
+        
+        <tr>
+            <td><label for="preco">Preço (em poke-dollar &#8381;): </label></td>
+            <!-- Adicione o id apropriado e o type para receber números abaixo -->
+            <td><input type="currency" id="preço" name="preço"></td>
+        </tr>
+        
+        <tr>
+            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+            <td><label for="quantidade">Quantidade disponível: </label></td>
+            <td><input type="number" id="quantidade" name="quantidade"></td>
+        </tr>
+
+        <tr class="form-add">
+            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+            <td><button id="botao" type="submit">Adicionar</button></td>
+        </tr>
+    </table>
+
+    </form>
+
+</body>
+</html>

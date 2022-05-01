@@ -1,0 +1,152 @@
+/* configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* página inicial */
+
+body {
+    display: grid;
+    grid-template-rows: 8vh 83vh 8vh;
+}
+
+/* cabeçalho (obg: mudaria a logo para ficar o nome a direita do icone)*/ 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+header>a>img {
+    height: 8vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>a {
+    margin-left: 1vw;
+}
+
+nav>a>p {
+    color: #51260E;
+}
+
+nav>a>img {
+    height: 5vh;
+}
+
+/* centro da página */
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+#mercado {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5vh;
+    margin-bottom: 1vh;
+    color: black;
+    
+}
+
+section>a>p {
+    font-size: 2vh;
+    color: black;
+}
+
+#bg1 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("/img/mercado-01.jpg") center center;
+    opacity: .20; 
+    background-size: cover;
+}
+
+#restaurante {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+#bg2 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("/img/restaurante-01.jpg") center center;
+    opacity: .20;
+    background-size: cover;
+}
+
+/* rodapé */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer>div>a>img {
+    height: 6vh;
+}
+
+/* responsividade iphone 6/7/8 */
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 3vh;
+        margin-bottom: 1vh;
+    }
+
+    section>a>p {
+        font-size: 2vh;
+        padding: 0 2vw;
+    }
+}
+
+/* Obs: 
+1- não sei se as 'seções' deveriam ser na mesma página ou não, 
+    coloquei em um menu no cabeçalho
+2- gostaria de ter colocado um efeito de mouse over no bg, 
+    mas parece que não funciona, e não consegui achar como fazer para modificar 
+    um elemento B passando o mouse por um elemento A, 
+    talvez com js que vamos aprender próxima semana isso se torne 
+    mais fácil e possível
+*/
